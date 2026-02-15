@@ -10,7 +10,7 @@ Predict whether red wine is "good quality" (quality ≥ 7) or "not good" using 1
 - **Target**: `good_quality` (1 = good ≥7, 0 = not good)
 - **Feature list**: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, alcohol, sulfur_ratio
 
-## Models Performance [6 marks]
+## Models Performance
 
 | ML Model | Accuracy | AUC   | Precision | Recall | F1    | MCC   |
 |----------|----------|-------|-----------|--------|-------|-------|
@@ -21,17 +21,19 @@ Predict whether red wine is "good quality" (quality ≥ 7) or "not good" using 1
 | Random Forest (Ensemble) | **0.9312** | **0.9405** | **0.9200** | 0.5349 | **0.6765** | **0.6706** |
 | XGBoost (Ensemble) | **0.9438** | 0.9312 | 0.8378 | **0.7209** | **0.7750** | **0.7458** |
 
-## Model Observations [3 marks]
+## Model Observations
 
 | ML Model | Observation |
 |----------|-------------|
-| Logistic Regression | Strong baseline with good precision but lower recall due to class imbalance |
-| Decision Tree | Matches Logistic accuracy but worse AUC; prone to overfitting on small dataset |
-| kNN | Solid performance but sensitive to scaling and distance metrics |
-| Naive Bayes | Best recall but sacrifices precision; independence assumption helps with imbalance |
+| **Logistic Regression** | Strong baseline with good precision but lower recall due to class imbalance |
+| **Decision Tree** | Matches Logistic accuracy but worse AUC; prone to overfitting on small dataset |
+| **kNN** | Solid performance but sensitive to scaling and distance metrics |
+| **Naive Bayes** | Best recall but sacrifices precision; independence assumption helps with imbalance |
 | **Random Forest (Ensemble)** | Excellent overall performance; bagging reduces variance significantly |
 | **XGBoost (Ensemble)** | **Best model**: highest accuracy + MCC + F1; gradient boosting excels on tabular data |
 
-**Live Demo**: [Your Streamlit URL here]
+**Live Demo**: [https://2025aa05038-wine-cassification.streamlit.app]
+
 **Dataset**: UCI Wine Quality (Red) [web:17]
+
 **Trained on**: BITS Pilani Virtual Lab
